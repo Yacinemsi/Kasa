@@ -1,9 +1,18 @@
 import React from "react";
-import heroImage from "./hero-home.png";
 
-const Hero = () => (
-  <div className="hero-container">
-    <h2>Chez vous, partout et ailleurs</h2>
+const Hero = ({ backgroundImage, title }) => (
+  <div
+    className="hero-container"
+    style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+    }}
+  >
+    {title && (
+      <h1>
+        <span className="title-part1">Chez vous,</span>
+        <span className="title-part2">partout et ailleurs</span>
+      </h1>
+    )}
   </div>
 );
 

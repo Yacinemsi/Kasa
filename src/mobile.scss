@@ -1,0 +1,25 @@
+@media only screen and (max-width: 425px) {
+  header {
+    padding: 25px;
+  }
+  .hero-container {
+    height: 150px;
+    justify-content: flex-start;
+    h1 {
+      margin-left: 10px;
+    }
+    .title-part1,
+    .title-part2 {
+      display: block;
+      font-size: 24px;
+    }
+  }
+  main {
+    background-color: transparent;
+    padding-bottom: 30px;
+    .liste-logement {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+  }
+}
