@@ -66,5 +66,3 @@ const ContenuPageLogement = ({ logement }) => {
 };
 
 export default ContenuPageLogement;
-
-/*<p>{logement.description}</p>*/
