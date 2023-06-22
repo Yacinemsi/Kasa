@@ -1,27 +1,16 @@
 import React from "react";
-import AccordionItem from "./AccordionItem";
 import ListeLogements from "./ListeLogements";
+import Accordion from "./Accordion";
+import ContenuPageLogement from "./ContenuPageLogement";
 
-const Main = ({ accordion, showLogements }) => {
+const Main = ({ accordion, showLogements, style, contenuPageLogement }) => {
   return (
-    <main>
-      {accordion && (
-        <>
-          <AccordionItem title="Section 1">
-            <p>Contenu de la section 1.</p>
-          </AccordionItem>
-          <AccordionItem title="Section 2">
-            <p>Contenu de la section 2.</p>
-          </AccordionItem>
-          <AccordionItem title="Section 3">
-            <p>Contenu de la section 2.</p>
-          </AccordionItem>
-          <AccordionItem title="Section 4">
-            <p>Contenu de la section 2.</p>
-          </AccordionItem>
-        </>
-      )}
+    <main style={style}>
+      {accordion && <Accordion />}
       {showLogements && <ListeLogements />}
+      {contenuPageLogement && (
+        <ContenuPageLogement logement={contenuPageLogement} />
+      )}
     </main>
   );
 };

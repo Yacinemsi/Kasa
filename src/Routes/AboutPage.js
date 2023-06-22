@@ -1,15 +1,25 @@
 import React from "react";
 import Header from "../Header";
 import Main from "../Main";
-import Hero from "../Hero";
+import Banner from "../Banner";
 import "../App.scss";
-import heroAboutImage from "../hero-about.png";
+import heroAboutImage from "../images/hero-about.png";
 
 const AboutPage = () => (
-  <div>
+  <div className="container">
     <Header />
-    <Hero backgroundImage={heroAboutImage} title={false} />
-    <Main accordion={true} showLogements={false} />
+    <Banner
+      backgroundImage={heroAboutImage}
+      title={false}
+      className="hero-mobile-about"
+    />
+    <Main
+      accordion={true}
+      showLogements={false}
+      style={{
+        backgroundColor: "transparent",
+      }}
+    />
   </div>
 );
 

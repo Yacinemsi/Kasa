@@ -10,12 +10,10 @@ import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-      <Footer />
-    </Router>
-  </React.StrictMode>
+  <Router>
+    <App />
+    <Footer />
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

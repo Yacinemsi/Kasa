@@ -1,8 +1,8 @@
 import React from "react";
 
-const Hero = ({ backgroundImage, title }) => (
+const Banner = ({ backgroundImage, title, className }) => (
   <div
-    className="hero-container"
+    className={`hero-container ${className}`}
     style={{
       backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
     }}
@@ -16,4 +16,4 @@ const Hero = ({ backgroundImage, title }) => (
   </div>
 );
 
-export default Hero;
+export default Banner;

@@ -60,27 +60,213 @@ main {
   margin-right: auto;
   border-radius: 20px;
   margin-top: 20px;
+  margin-bottom: 30px;
+  .accordeon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 25px;
+  }
+
+  .button-accordeon {
+    background-color: $main-color;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .contain-accordeon {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  p {
+    padding: 0 20px;
+    color: $main-color;
+  }
+
+  .accordeon-content-enter {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .accordeon-content-enter-active {
+    max-height: 500px;
+  }
+
+  .accordeon-content-exit {
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .accordeon-content-exit-active {
+    max-height: 0;
+  }
+
   .liste-logement {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 40px;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
     .cards {
       background-size: cover;
       height: 300px;
-      color: white;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-end;
+      &:hover {
+        box-shadow: grey 0px 0px 12px;
+        cursor: pointer;
+      }
     }
     h2 {
-      font-size: 14px;
-      font-weight: 600;
+      color: white;
+      font-size: 16px;
+      font-weight: 900;
       text-align: center;
       margin-left: 10px;
     }
+  }
+  .slider {
+    display: flex;
+    align-items: center;
+    .slide {
+      width: 100%;
+      display: none;
+      img {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+    }
+    .active-slide {
+      display: block;
+    }
+    .slider-arrow {
+      position: absolute;
+      background: transparent;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 50px;
+    }
+    .prev {
+      left: 6%;
+    }
+    .next {
+      right: 6%;
+    }
+  }
+  .title-host {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .title {
+      h1 {
+        font-size: 26px;
+        color: $main-color;
+        font-weight: 500;
+      }
+      p {
+        font-size: 16px;
+        color: $main-color;
+        font-weight: 500;
+        padding: 0;
+      }
+      ul {
+        padding: 0;
+        li {
+          padding: 3px 20px;
+          margin: 0 5px;
+          border-radius: 10px;
+          display: inline;
+          text-decoration: none;
+          color: white;
+          font-weight: 500;
+          font-size: 14px;
+          background-color: $main-color;
+        }
+      }
+    }
+
+    .host {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 20px;
+      .mobile-rating {
+        display: none;
+      }
+      .host-name-image {
+        display: flex;
+        margin-top: 10px;
+        align-items: flex-end;
+      }
+      p {
+        font-size: 16px;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .accordions-container {
+    display: flex;
+    gap: 75px;
+    margin-top: 30px;
+    ul {
+      list-style-type: none;
+      padding-left: 15px;
+      li {
+        color: $main-color;
+      }
+    }
+  }
+}
+.container-404 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 200px;
+    font-weight: 800;
+    color: $main-color;
+  }
+  p {
+    font-size: 30px;
+    font-weight: 500;
+    color: $main-color;
+    margin-bottom: 100px;
+  }
+  a {
+    font-size: 20px;
+    color: $main-color;
+    text-decoration: underline;
+    margin-bottom: 100px;
   }
 }
 footer {
