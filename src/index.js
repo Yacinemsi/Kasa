@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.scss";
-import "./App.scss";
-import "./mobile.scss";
-import App from "./App";
+import "./sass/index.scss";
+import "./sass/App.scss";
+import "./sass/mobile.scss";
+import App from "./App/App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "./component-footer/Footer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

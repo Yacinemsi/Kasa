@@ -1,7 +1,7 @@
 import React from "react";
-import Slider from "./Slider.js";
+import Slider from "../component-slider/Slider.js";
 import StarRatings from "react-star-ratings";
-import AccordionItem from "./AccordionItem.js";
+import AccordionItem from "../component-accordeon/AccordionItem.js";
 
 const ContenuPageLogement = ({ logement }) => {
   return (

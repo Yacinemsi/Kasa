@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header.js";
+import Header from "../component-header/Header.js";
 import { Link } from "react-router-dom";
 
 const NotFoundPage = () => (

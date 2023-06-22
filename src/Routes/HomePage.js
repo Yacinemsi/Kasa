@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header.js";
-import Main from "../Main.js";
-import Banner from "../Banner.js";
+import Header from "../component-header/Header.js";
+import Main from "../component-main/Main.js";
+import Banner from "../component-banner/Banner.js";
 import heroHomeImage from "../images/hero-home.png";
 
 const HomePage = () => (

@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../Header";
-import Main from "../Main";
-import Banner from "../Banner";
-import "../App.scss";
+import Header from "../component-header/Header";
+import Main from "../component-main/Main";
+import Banner from "../component-banner/Banner";
+import "../sass/App.scss";
 import heroAboutImage from "../images/hero-about.png";
 
 const AboutPage = () => (

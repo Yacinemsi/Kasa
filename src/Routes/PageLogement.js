@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
-import LogementContext from "../LogementContext";
-import Header from "../Header";
-import Main from "../Main";
+import LogementContext from "../component-logement/LogementContext";
+import Header from "../component-header/Header";
+import Main from "../component-main/Main";
 
 const PageLogement = () => {
   const { id } = useParams(); // get the id from the URL

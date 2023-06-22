@@ -1,6 +1,6 @@
 import React from "react";
-import logements from "./logements.json";
-import Cards from "./Cards";
+import logements from "../data/logements.json";
+import Cards from "../component-cards/Cards.js";
 
 const ListeLogements = () => {
   return (

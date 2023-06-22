@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "./images/logo.png";
-import "./App.scss";
+import logo from "../images/logo.png";
 import { useMatch, Link } from "react-router-dom";
 
 const Header = () => {

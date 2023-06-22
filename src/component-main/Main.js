@@ -1,7 +1,7 @@
 import React from "react";
-import ListeLogements from "./ListeLogements";
-import Accordion from "./Accordion";
-import ContenuPageLogement from "./ContenuPageLogement";
+import ListeLogements from "../component-logement/ListeLogements";
+import Accordion from "../component-accordeon/Accordion";
+import ContenuPageLogement from "../component-logement/ContenuPageLogement";
 
 const Main = ({ accordion, showLogements, style, contenuPageLogement }) => {
   return (
