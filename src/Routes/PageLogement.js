@@ -5,11 +5,10 @@ import Header from "../component-header/Header";
 import Main from "../component-main/Main";
 
 const PageLogement = () => {
-  const { id } = useParams(); // get the id from the URL
-  const logements = useContext(LogementContext); // get the logements data from context
+  const { id } = useParams();
+  const logements = useContext(LogementContext);
   const navigate = useNavigate();
 
-  // Find the logement with the matching id
   const logement = logements.find((logement) => logement.id === id);
 
   useEffect(() => {
@@ -18,7 +17,6 @@ const PageLogement = () => {
     }
   }, [logement, navigate]);
 
-  // Render the logement details
   return (
     <div>
       <Header />
