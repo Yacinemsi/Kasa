@@ -11,7 +11,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/logement/:id" element={<PageLogement />} /> {}
+      <Route path="/logement/:id" element={<PageLogement />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </LogementContext.Provider>
