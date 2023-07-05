@@ -139,10 +139,10 @@ main {
     }
     h2 {
       color: white;
-      font-size: 16px;
-      font-weight: 900;
+      font-size: 14px;
+      font-weight: 500;
       text-align: center;
-      margin-left: 10px;
+      margin-left: 5px;
     }
   }
   .slider {
@@ -175,6 +175,13 @@ main {
     }
     .next {
       right: 6%;
+    }
+    .image-counter {
+      position: relative;
+      bottom: 50px;
+      left: 50%;
+      color: white;
+      font-size: 18px;
     }
   }
   .title-host {
@@ -220,7 +227,8 @@ main {
       .host-name-image {
         display: flex;
         margin-top: 10px;
-        align-items: flex-end;
+        align-items: center;
+        width: 80%;
       }
       p {
         font-size: 16px;

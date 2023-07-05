@@ -51,6 +51,8 @@ $font-stack: Montserrat, sans-serif;
       }
       .host-name-image {
         margin-top: 0;
+        margin-right: 0px;
+        width: 40%;
       }
     }
     .desktop-rating {
@@ -74,6 +76,9 @@ $font-stack: Montserrat, sans-serif;
           }
         }
       }
+    }
+    .image-counter {
+      display: none;
     }
   }
   .container-404 {

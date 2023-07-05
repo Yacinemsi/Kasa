@@ -33,6 +33,9 @@ const Slider = ({ images }) => {
           key={i}
         >
           <img src={image} alt="" />
+          <div className="image-counter">
+            {currentIndex + 1}/{images.length}
+          </div>
         </div>
       ))}
 
